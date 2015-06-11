@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:marquee="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="148dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="128dp"
+            android:background="@drawable/bg_4"
+            android:paddingBottom="20dp"
+            android:paddingLeft="104dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Trang Cuộc Thi"
+                android:textColor="#FFF"
+                android:textSize="25dp" />
+        </RelativeLayout>
+        <!--
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="128dp"
+            android:background="@color/green_complete" />
+        -->
+
+        <vn.edu.hust.materiallib.ButtonFloatSmall
+            android:id="@+id/buttonColorSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="108dp"
+            android:background="#997CFC00"
+            materialdesign:iconDrawable="@drawable/bt_t" />
+
+        <vn.edu.hust.materiallib.ToolTipRelativeLayout
+            android:id="@+id/activity_main_tooltipframelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="104dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Danh sách cuộc thi"
+            android:textColor="@color/green_complete"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green_complete" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.example.widgetcustomlib.CircularProgress
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            widget:circular_progress_color="@color/green_complete"
+            widget:circular_progress_size="Normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Loading..."
+            android:textColor="@color/green_complete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <vn.hust.edu.view.AnimatedExpandableListView
+            android:id="@+id/elContest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:childDivider="@drawable/diliverlv2"
+            android:divider="@drawable/diliverlv2"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88CCCCCC"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <com.example.widgetcustomlib.ErrorView
+            android:id="@+id/error_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ev_errorSubtitle="@string/error_subtitle_failed_one_more_time"
+            app:ev_errorSubtitleColor="#000000"
+            app:ev_errorTitleColor="#000000"
+            app:ev_retryButtonTextColor="@color/apptheme_accent" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/vn.hust.edu.main">
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Bắt Buộc"
+                android:textColor="#000000"
+                android:textSize="16pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.example.widgetcustomlib.FloatingEditText
+            android:id="@+id/editLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tài Khoản Đăng nhập"
+            app:floating_edit_text_highlighted_color="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName" />
+
+        <com.example.widgetcustomlib.FloatingEditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Mật Khẩu Cũ"
+            android:visibility="gone"
+               app:floating_edit_text_highlighted_color="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword" />
+        
+        <com.example.widgetcustomlib.FloatingEditText
+            android:id="@+id/editPassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Mật Khẩu"
+               app:floating_edit_text_highlighted_color="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword" />
+
+        <com.example.widgetcustomlib.FloatingEditText
+            android:id="@+id/editPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Lại Mật Khẩu"
+               app:floating_edit_text_highlighted_color="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword" />
+
+        <com.example.widgetcustomlib.FloatingEditText
+            android:id="@+id/editMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+               app:floating_edit_text_highlighted_color="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Hòm Thư Điện Tử"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+</LinearLayout>

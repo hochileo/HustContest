@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Đồ Án Tốt Nghiệp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="profile">Thông tin cá nhân</string>
+    <string name="myContest">Cuộc thi của tôi</string>
+    <string name="myHis">Bảng điểm của tôi</string>
+    <string name="myInfo">Thông tin ứng dụng</string>
+    <string name="report">Phản hồi</string>
+    <string name="email">lamnt.hust@gmail.com</string>
+    <string name="password">hochileo1992</string>
+    <string name="err_pass">Mật khâu phải lớn hơn 6 ký tự</string>
+    <string name="Sign_in">Đăng nhập</string>
+    <string name="Submit">Nộp bài</string>
+    <string name="Sign_out">Đăng ký</string>
+    <string name="Success">OK</string>
+    <string name="Loading">Chấm bài...</string>
+    <string name="err_input">Không thể để trống mục này</string>
+    <string name="err_login">Sai tên tài khoản hoặc mật khẩu</string>
+    <string name="success_login">Đăng nhập thành công</string>
+
+    <string name="error_title_damn">Damn</string>
+    <string name="error_subtitle_failed_one_more_time">Failed one more time</string>
+
+    <string name="info_retrying">Retrying</string>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+</resources>

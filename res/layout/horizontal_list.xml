@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/vn.hust.edu.main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/contest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="Contest ID"
+        android:textColor="@color/orange"
+        android:textStyle="bold" />
+
+    <vn.hust.edu.horizontallistview.HListView
+        android:id="@+id/hListView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#88CCCCCC"
+        android:divider="@color/orange"
+        android:listSelector="@android:color/transparent"
+        app:hlv_dividerWidth="1dp"
+        app:hlv_footerDividersEnabled="true" 
+        />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_empty="true" android:drawable="@drawable/group_expand" >
+	    <layer-list>
+	        <item 
+	            android:left="30dp"
+	            android:right="30dp"
+	            android:top="30dp"
+	            android:bottom="30dp"
+	            android:drawable="@drawable/group_expand">
+	            
+	        </item>
+	    </layer-list>
+	</item>
+	<item android:state_expanded="true" >
+	     <layer-list>
+	        <item 
+	            android:left="0dp"
+	            android:right="0dp"
+	            android:top="30dp"
+	            android:bottom="30dp"
+	            android:drawable="@drawable/group_collapse">
+	        </item>
+	    </layer-list>
+	</item>
+</selector>

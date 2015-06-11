@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/num_ques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="11. "
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <vn.hust.edu.buttonchooselib.CircleButton
+                android:id="@+id/choose_a"
+                android:layout_width="33dip"
+                android:layout_height="33dip"
+                android:layout_marginRight="4dip"
+                android:src="@drawable/a"
+                app:cb_color="@color/black" />
+
+            <vn.hust.edu.buttonchooselib.CircleButton
+                android:id="@+id/choose_b"
+                android:layout_width="33dip"
+                android:layout_height="33dip"
+                android:layout_marginRight="4dip"
+                android:src="@drawable/b"
+                app:cb_color="@color/black" />
+
+            <vn.hust.edu.buttonchooselib.CircleButton
+                android:id="@+id/choose_c"
+                android:layout_width="33dip"
+                android:layout_height="33dip"
+                android:layout_marginRight="3dip"
+                android:src="@drawable/c"
+                app:cb_color="@color/black" />
+            
+            <vn.hust.edu.buttonchooselib.CircleButton
+                android:id="@+id/choose_d"
+                android:layout_width="33dip"
+                android:layout_height="33dip"
+                android:layout_marginRight="3dip"
+                android:src="@drawable/c"
+                android:visibility="gone"
+                app:cb_color="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

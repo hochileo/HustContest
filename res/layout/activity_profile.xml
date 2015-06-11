@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:marquee="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="148dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="128dp"
+            android:background="@drawable/bg_2"
+            android:paddingBottom="20dp"
+            android:paddingLeft="104dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Trang Cá Nhân"
+                android:textColor="#FFF"
+                android:textSize="25dp" />
+        </RelativeLayout>
+        <!--
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="128dp"
+            android:background="#1E88E5" />
+        -->
+
+        <vn.edu.hust.materiallib.ButtonFloatSmall
+            android:id="@+id/buttonColorSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="108dp"
+            android:background="#991E88E5"
+            materialdesign:iconDrawable="@drawable/bt_p" />
+
+        <vn.edu.hust.materiallib.ToolTipRelativeLayout
+            android:id="@+id/activity_main_tooltipframelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="104dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Thông tin của tôi"
+            android:textColor="#1E88E5"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#1E88E5" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <com.example.widgetcustomlib.CircularProgress
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            widget:circular_progress_color="@color/blue_bg"
+            widget:circular_progress_size="Normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Loading..."
+            android:textColor="@color/blue_bg" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/textView2"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/main_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemLogin"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Tài khoản"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="Admin"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+
+            <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemOffice"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Chức vụ"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvOffice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="Job"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+
+            <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemName"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Họ và Tên"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="Nguyễn Tùng Lâm"
+                    android:textColor="#000000"
+                    tools:ignore="HardcodedText" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+
+            <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemMail"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Hòm thư"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="lamnt.hust@gmail.com"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+            
+             <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemPhone"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Điện thoại"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="0984657592"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+            
+             <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemAdd"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Địa chỉ"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="P401,A5,Chung cư Đền Lừ II, Phường Hoàng Văn Thụ, Quận Hoàng Mai, Hà Nội"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+             <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemDate"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Năm sinh"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="25-08-1992"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+
+            <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemInstutide"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Khoa Viện"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvInstutide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="Viện Công nghệ thông tin và truyền thông"
+                    android:textColor="#000000"
+                    tools:ignore="HardcodedText" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+
+            <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Bộ Môn"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDepartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="Hệ thống thông tin"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+
+            <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemClass"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Lớp"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="Cử Nhân Công nghệ thông tin 1"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+
+            <vn.edu.hust.materiallib.LayoutRipple
+                android:id="@+id/itemVip"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="#FFF"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="Đặc biệt"
+                    android:textColor="#1E88E5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvVip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="104dp"
+                    android:text="NP"
+                    android:textColor="#000000" />
+            </vn.edu.hust.materiallib.LayoutRipple>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

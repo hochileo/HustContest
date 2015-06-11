@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <vn.hust.edu.view.ImageZoom
+        android:id="@+id/im_intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/about_part1" />
+
+</LinearLayout>

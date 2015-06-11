@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <vn.hust.edu.view.AnimatedSubjectExpandableListView
+        android:id="@+id/elSubject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@drawable/diliverlv3"
+        android:divider="@drawable/diliverlv2"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/green_complete"
+        android:drawSelectorOnTop="false"
+        android:transcriptMode="alwaysScroll"
+        android:indicatorLeft="-1dp" />
+
+</LinearLayout>

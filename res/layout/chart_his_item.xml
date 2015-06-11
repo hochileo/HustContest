@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F9C33" >
+
+    <TextView
+        android:id="@+id/tv_hocky"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="20151"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mahocphan"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="IT1234"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tenhocphan"
+        android:gravity="center"
+        android:padding="5dp"
+        android:minLines="2"
+        android:text="Cấu trúc dữ liệu và giải thuật"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_tenkythi"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="LOCAL_TOEIC"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dotthi"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="IT1234-1"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dethi"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="IT1234-IT1234-1"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_diemso"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="7"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent" >
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_diemchu"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="C+"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</TableRow>
